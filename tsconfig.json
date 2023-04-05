@@ -1,0 +1,24 @@
+{
+	"extends": "@tsconfig/react-native/tsconfig.json",
+	"compilerOptions": {
+		"target": "ES6",
+		"allowJs": false,
+		"downlevelIteration": true,
+		"strict": true,
+		"forceConsistentCasingInFileNames": true,
+		"noErrorTruncation": true,
+		"noUncheckedIndexedAccess": true,
+		"noEmit": true,
+		"esModuleInterop": true,
+		"resolveJsonModule": true,
+		"isolatedModules": true,
+		"jsx": "preserve",
+		"incremental": true,
+		"skipLibCheck": true,
+		"baseUrl": ".",
+		"paths": { "@/*": ["./src/*"] },
+		"typeRoots": ["./src/types/**/*.ts", "./src/types/**/*.d.ts", "node_modules/@types"]
+	},
+	"include": ["./src/types", "./src"],
+	"exclude": ["node_modules"]
+}
